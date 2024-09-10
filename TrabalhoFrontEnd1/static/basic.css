@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Sweet Barbie";
+    src: url("fonts/Sweet Barbie.otf")
+}
+
+header {
+    background-color: #761e1d;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-box img {
+    width: 200px;
+}
+
+h1 {
+    display: inline-block;
+    font-family: "Sweet Barbie";
+    color: white;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+h2 {
+    display: inline;
+    font-family: "Tauri";
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+
+.back {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(190, 190, 190);
+    padding: 2%;
+}
+
+h3 {
+    display: inline;
+    font-family: "Sweet Barbie";
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+
+p {
+    display: inline;
+    font-family: "Tauri";
+    margin-bottom: 1%;
+}
+
+.back a {
+    display: block;
+    width: 20%;
+    font-family: "Tauri";
+    margin-bottom: 4%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #761e1d;
+    text-align: center;
+    border-radius: 60px;
+    text-decoration: none;
+}
+
+.food {
+    margin-left: 1.5%;
+}
+
+.food div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.food img {
+    display: inline;
+    width: 200px;
+    margin-left: 2%;
+    margin-bottom: 1.5%;
+}
+
+.food p {
+    line-height: 125%;
+}
+
+.food a {
+    display: block;
+    width: 20%;
+    font-family: "Tauri";
+    margin-bottom: 4%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #761e1d;
+    text-align: center;
+    border-radius: 60px;
+    text-decoration: none;
+}
+
+.food a:hover {
+    cursor: pointer;
+    background-color: #461312;
+}
+
+.food a:active {
+    background-color: #761f1d85;
+}
+
+#coxinha {
+    margin-bottom: 0%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+footer a {
+    font-family: "Tauri";
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: black;
+}

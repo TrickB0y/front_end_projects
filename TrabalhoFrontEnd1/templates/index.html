@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+
+    <!--style sheets--> 
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='basic.css' ) }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        
+        <div class="logo-box">
+            <h1>Lanchonete Da</h1>
+            <img src="{{ url_for( 'static', filename='imgs/logo.png' ) }}">
+        </div>
+    </header>
+    <div class="menu">
+        <!--lanches-->
+        <h3>Nossos Lanches!</h3>
+        <div class="food">
+            <div>
+                <p>Pao de queijo</p>
+                <img src="{{ url_for( 'static', filename='imgs/pao-de-queijo.jpeg' ) }}">
+                <a href="{{ url_for( 'details' ) }}">Veja mais</a>
+            </div>
+            <div>
+                <p>Joelho</p>
+                <img src="{{ url_for( 'static', filename='imgs/joelho.jpg' ) }}">
+                <a>Veja mais</a>
+            </div>
+            <div>
+                <p>Pastel</p>
+                <img src="{{ url_for( 'static', filename='imgs/pastel.jpeg' ) }}">
+                <a>Veja mais</a>
+            </div>
+            <div>
+                <p>Coxinha</p>
+                <img src="{{ url_for( 'static', filename='imgs/coxinha.jpeg' ) }}">
+                <a>Veja mais</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>feito por marco antônio</p> 
+        <a href="https://github.com/TrickB0y">Visite meu github</a>
+    </footer>
+    
+</body>
+</html>
