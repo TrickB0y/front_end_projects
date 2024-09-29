@@ -29,22 +29,22 @@
             <div>
                 <p>Pao de queijo</p>
                 <img src="{{ url_for( 'static', filename='imgs/pao-de-queijo.jpeg' ) }}">
-                <a href="{{ url_for( 'details' ) }}">Veja mais</a>
+                <a href="{{ url_for( 'details', id = 1 ) }}">Veja mais</a>
             </div>
             <div>
                 <p>Joelho</p>
                 <img src="{{ url_for( 'static', filename='imgs/joelho.jpg' ) }}">
-                <a>Veja mais</a>
+                <a href="{{ url_for( 'details', id = 2 ) }}">Veja mais</a>
             </div>
             <div>
                 <p>Pastel</p>
                 <img src="{{ url_for( 'static', filename='imgs/pastel.jpeg' ) }}">
-                <a>Veja mais</a>
+                <a href="{{ url_for( 'details', id = 3 ) }}">Veja mais</a>
             </div>
             <div>
                 <p>Coxinha</p>
                 <img src="{{ url_for( 'static', filename='imgs/coxinha.jpeg' ) }}">
-                <a>Veja mais</a>
+                <a href="{{ url_for( 'details', id = 4 ) }}">Veja mais</a>
             </div>
         </div>
     </div>
