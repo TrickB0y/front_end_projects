@@ -1,0 +1,95 @@
+
+header {
+    background-color: #422a8a;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-box img {
+    width: 200px;
+}
+
+h1 {
+    display: inline-block;
+    font-family: "Tauri";
+    color: white;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    display: inline;
+    font-family: "Tauri";
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    .conferencia {
+        background-color: #422a8a;
+        transition: background-color, 0.25s;
+    }
+}
+
+a:active{
+    color : rgba(0, 0, 0, 0.182);
+    .conferencia {
+        background-color: #422a8a6f;
+        transition: background-color, 0.1s;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.conferencia {
+    background-color: rgb(185, 185, 185);
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    border-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+p {
+    display: inline;
+    font-family: "Tauri";
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer a {
+    font-family: "Tauri";
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: black;
+}

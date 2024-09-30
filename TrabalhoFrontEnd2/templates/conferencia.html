@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ conferencia.get_nome() }}</title>
+
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='basic.css' ) }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>{{ conferencia.get_nome() }}</h1>
+    </header>
+
+    <div>
+        <h2>Tema</h2>
+        <p>{{ conferencia.get_tema() }}</p>
+    </div>
+
+    <div>
+        <h2>Data</h2>
+        <p>{{ conferencia.get_data_texto() }}</p>
+    </div>
+
+    <div>
+        <h2>Local</h2>
+        <p>{{ conferencia.get_local() }}</p>
+    </div>
+
+    <div>
+        <h2>Organizadores</h2>
+        <p>{{ conferencia.get_organizador() }}</p>
+    </div>
+
+    <div>
+        <h2>Regras</h2>
+        <p>{{ conferencia.get_regras() }}</p>
+    </div>
+
+    <div>
+        <h2>Prêmios</h2>
+        <p>{{ conferencia.get_premio() }}</p>
+    </div>
+
+    <div>
+        <h2>Palestrantes</h2>
+        <div>
+            <img rel="imagem-palestrante" src="">
+            <h3>{{ conferencia.get_palestrantes()[0].get_nome_desc() }}</h3>
+            <p>{{ conferencia.get_palestrantes()[0].get_desc() }}</p>
+        </div>
+        <div>
+            <img rel="imagem-palestrante" src="">
+            <h3>{{ conferencia.get_palestrantes()[1].get_nome_desc() }}</h3>
+            <p>{{ conferencia.get_palestrantes()[1].get_desc() }}</p>
+        </div>
+        <div>
+            <img rel="imagem-palestrante" src="">
+            <h3>{{ conferencia.get_palestrantes()[2].get_nome_desc() }}</h3>
+            <p>{{ conferencia.get_palestrantes()[2].get_desc() }}</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Artigo Submetido</h2>
+        <p>{{ conferencia.get_artigo().get_nome() }}</p>
+        <p>{{ conferencia.get_artigo().get_autor() }}</p>
+        <p>{{ conferencia.get_artigo().get_resumo() }}</p>
+    </div>
+
+    <footer>
+        <p>feito por marco antônio</p> 
+        <a href="https://github.com/TrickB0y">Visite meu github</a>
+    </footer>
+</body>
+</html>
