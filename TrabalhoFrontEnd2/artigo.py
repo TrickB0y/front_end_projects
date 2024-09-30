@@ -45,7 +45,7 @@ class Artigo:
         self.__foto = foto
     
     def get_foto(self):
-        return self.__foto
+        return "imgs/" + self.__foto
     
     def set_resumo(self, resumo):
         self.__resumo = resumo

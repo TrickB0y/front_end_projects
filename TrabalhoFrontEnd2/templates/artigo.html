@@ -6,6 +6,7 @@
     <title>{{ artigo.get_nome() }}</title>
 
     <link rel="stylesheet" href="{{ url_for( 'static' , filename='reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='artigo.css' ) }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,39 @@
 
 </head>
 <body>
+
+    <div class="go_back">
+        <a href="{{ url_for( 'conferencia', id = id ) }}">Voltar Para Conferência</a>
+    </div>
+
     <header>
         <h1>{{ artigo.get_nome() }}</h1>
     </header>
+
+    <div>
+        <h2>Resumo</h2>
+        <p>{{ artigo.get_resumo() }}</p>
+    </div>
+
+    <div>
+        <h2>Introdução</h2>
+        <p>{{ artigo.get_intro() }}</p>
+    </div>
+
+    <div>
+        <h2>Metodologia</h2>
+        <p>{{ artigo.get_metodologia() }}</p>
+    </div>
+
+    <div>
+        <h2>Resultados</h2>
+        <p>{{ artigo.get_resultados() }}</p>
+    </div>
+
+    <div>
+        <h2>Conclusão</h2>
+        <p>{{ artigo.get_conclusao() }}</p>
+    </div>
 
 </body>
 </html>

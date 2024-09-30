@@ -30,7 +30,7 @@ class Palestrante:
         self.__nome_foto = nome_foto
     
     def get_nome_foto(self):
-        return self.__nome_foto
+        return "imgs/" + self.__nome_foto
     
 def pick_palestrante(dicionario, nome_conferencia, nome_palestrante):
     return Palestrante(dicionario["conferencias"][nome_conferencia]["palestrantes"][nome_palestrante]["nome_desc"],

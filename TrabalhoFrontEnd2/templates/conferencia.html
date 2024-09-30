@@ -18,60 +18,76 @@
         <h1>{{ conferencia.get_nome() }}</h1>
     </header>
 
-    <div>
+    <div class="go_back">
+        <a href="{{ url_for( 'home' ) }}">Voltar Para O Início</a>
+    </div>
+
+    <div class="part">
         <h2>Tema</h2>
         <p>{{ conferencia.get_tema() }}</p>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Data</h2>
         <p>{{ conferencia.get_data_texto() }}</p>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Local</h2>
         <p>{{ conferencia.get_local() }}</p>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Organizadores</h2>
         <p>{{ conferencia.get_organizador() }}</p>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Regras</h2>
         <p>{{ conferencia.get_regras() }}</p>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Prêmios</h2>
         <p>{{ conferencia.get_premio() }}</p>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Palestrantes</h2>
-        <div>
-            <img rel="imagem-palestrante" src="">
+        <div class="pal">
+            <img class="foto_pal" rel="imagem-palestrante" src="{{ url_for( 'static', filename = conferencia.get_palestrantes()[0].get_nome_foto() ) }}">
             <h3>{{ conferencia.get_palestrantes()[0].get_nome_desc() }}</h3>
-            <p>{{ conferencia.get_palestrantes()[0].get_desc() }}</p>
+            <div class="pal_desc">
+                <p>{{ conferencia.get_palestrantes()[0].get_desc() }}</p>
+            </div>
+            
         </div>
-        <div>
-            <img rel="imagem-palestrante" src="">
+        <div class="pal">
+            <img class="foto_pal" rel="imagem-palestrante" src="{{ url_for( 'static', filename = conferencia.get_palestrantes()[1].get_nome_foto() ) }}">
             <h3>{{ conferencia.get_palestrantes()[1].get_nome_desc() }}</h3>
-            <p>{{ conferencia.get_palestrantes()[1].get_desc() }}</p>
+            <div class="pal_desc">
+                <p>{{ conferencia.get_palestrantes()[1].get_desc() }}</p>
+            </div>
         </div>
-        <div>
-            <img rel="imagem-palestrante" src="">
+        <div class="pal">
+            <img class="foto_pal" rel="imagem-palestrante" src="{{ url_for( 'static', filename = conferencia.get_palestrantes()[2].get_nome_foto() ) }}">
             <h3>{{ conferencia.get_palestrantes()[2].get_nome_desc() }}</h3>
-            <p>{{ conferencia.get_palestrantes()[2].get_desc() }}</p>
+            <div class="pal_desc">
+                <p>{{ conferencia.get_palestrantes()[2].get_desc() }}</p>
+            </div>
         </div>
     </div>
 
-    <div>
+    <div class="part">
         <h2>Artigo Submetido</h2>
-        <p>{{ conferencia.get_artigo().get_nome() }}</p>
-        <p>{{ conferencia.get_artigo().get_autor() }}</p>
-        <p>{{ conferencia.get_artigo().get_resumo() }}</p>
+        <h3>{{ conferencia.get_artigo().get_nome() }}</h3>
+        <h4>{{ conferencia.get_artigo().get_autor() }}</h4>
+        <div class="art_desc">
+            <p>{{ conferencia.get_artigo().get_resumo() }}</p>
+        </div>
+        <div class="go_artigo">
+            <a href="{{ url_for( 'artigo', id = id ) }}">Ver Artigo Completo</a>
+        </div>
     </div>
 
     <footer>

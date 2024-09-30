@@ -27,10 +27,25 @@ h2 {
     display: inline;
     font-family: "Tauri";
     font-size: 200%;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+}
+
+h3 {
+    font-family: "Tauri";
+    font-size: 150%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+
+h4 {
+    font-family: "Tauri";
+    font-size: 125%;
+    margin-left: 4%;
+    margin-bottom: 1%;
 }
 
 a {
+    font-family: "Tauri";
     text-decoration: none;
 }
 
@@ -69,6 +84,95 @@ a:active{
     border-left: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.go_back {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.go_back a {
+    color: white;
+    background-color: #422a8a;
+    border-radius: 12px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.go_back a:hover {
+    background-color: #422a8ab6;
+}
+
+.go_back a:active {
+    background-color: #422a8a6f;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.part p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.pal {
+    margin-bottom: 6%;
+}
+
+.pal_desc {
+    padding-top: 1%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.pal_desc p {
+    margin-right: 3%;
+}
+
+.foto_pal {
+    width: 200px;
+    border-radius: 15px;
+}
+
+.art_desc {
+    padding-top: 1%;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+.art_desc p {
+    margin-right: 3%;
+}
+
+.go_artigo {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.go_artigo a {
+    color: white;
+    background-color: #422a8a;
+    border-radius: 12px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.go_artigo a:hover {
+    background-color: #422a8ab6;
+}
+
+.go_artigo a:active {
+    background-color: #422a8a6f;
 }
 
 p {

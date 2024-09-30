@@ -30,7 +30,7 @@ def conferencia(id):
                 conferencia = cyber_next
             else:
                 return "conferencia inexistente"
-    return render_template('conferencia.html', conferencia = conferencia )
+    return render_template('conferencia.html', conferencia = conferencia, id = id)
 
 @app.route('/artigo/<int:id>')
 def artigo(id):
@@ -44,4 +44,4 @@ def artigo(id):
                 artigo = cyber_next.get_artigo()
             else:
                 return "artigo inexistente"
-    return render_template('artigo.html', artigo = artigo)
+    return render_template('artigo.html', artigo = artigo, id = id)

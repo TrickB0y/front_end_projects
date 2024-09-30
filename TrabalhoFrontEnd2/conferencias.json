@@ -13,17 +13,17 @@
                 "john": {
                     "nome_desc": "John Carmack - Co-fundador da id Software e ex-CTO da Oculus VR",
                     "desc": "John Carmack \u00e9 um dos maiores nomes em realidade virtual e jogos eletr\u00f4nicos. Ele foi uma das principais figuras por tr\u00e1s do Oculus Rift e tem vasta experi\u00eancia em inova\u00e7\u00e3o de hardware e software para VR.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "john.jpg"
                 },
                 "jaron": {
                     "nome_desc": "Jaron Lanier - Cientista da Computa\u00e7\u00e3o, Autor e Pioneiro em Realidade Virtual",
                     "desc": "Jaron Lanier \u00e9 amplamente reconhecido como um dos pioneiros da realidade virtual. Al\u00e9m de ser um dos primeiros a popularizar a tecnologia VR, ele tamb\u00e9m \u00e9 um cr\u00edtico ativo sobre os impactos sociais da tecnologia.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "jaron.jpg"
                 },
                 "cathy": {
                     "nome_desc": "Cathy Hackl - Especialista em Futuro e Realidade Aumentada/Virtual, CEO da Futures Intelligence Group",
                     "desc": "Conhecida como \"godmother do metaverso\", Cathy Hackl \u00e9 uma das maiores especialistas em AR/VR e no futuro da tecnologia imersiva. Ela tem ampla experi\u00eancia em estrat\u00e9gias digitais para grandes marcas.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "cathy.png"
                 }
             },
             "artigo": {
@@ -34,7 +34,7 @@
                 "metodologia": "O estudo foi realizado com 200 alunos de escolas secund\u00e1rias em diferentes estados, divididos em dois grupos: um grupo exposto ao ensino tradicional e outro utilizando VR para complementar o aprendizado de temas de biologia e hist\u00f3ria. As m\u00e9tricas de avalia\u00e7\u00e3o inclu\u00edram testes de conhecimento, question\u00e1rios de satisfa\u00e7\u00e3o e observa\u00e7\u00e3o de engajamento durante as aulas.",
                 "resultados": "Os resultados indicaram que os alunos que utilizaram VR tiveram uma reten\u00e7\u00e3o de conhecimento vinte e cinco porcento superior, al\u00e9m de demonstrarem maior engajamento durante as aulas. Os question\u00e1rios tamb\u00e9m revelaram que oitenta e cinco porcento dos estudantes prefeririam ter mais aulas utilizando essa tecnologia.",
                 "conclusao": "A VR n\u00e3o apenas melhora a reten\u00e7\u00e3o de conhecimento, mas tamb\u00e9m aumenta o engajamento dos alunos. A implementa\u00e7\u00e3o em larga escala desta tecnologia, por\u00e9m, depende de maiores investimentos e da cria\u00e7\u00e3o de curr\u00edculos adaptados.",
-                "foto": "seila.jpg"
+                "foto": "helena.jpg"
             }
         },
         "AIFrontiersSummit": {
@@ -50,17 +50,17 @@
                 "andrew": {
                     "nome_desc": "Andrew Ng - Cofundador da Coursera e fundador da Landing AI",
                     "desc": "Andrew Ng \u00e9 uma das maiores autoridades em IA, sendo cofundador da Coursera e professor adjunto na Universidade de Stanford. Ele \u00e9 conhecido por seus cursos de IA e aprendizado de m\u00e1quina, e tem liderado projetos inovadores que aplicam IA em diversos setores industriais.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "andrew.jpg"
                 },
                 "fei_fei": {
                     "nome_desc": "Fei-Fei Li - Professora de Ci\u00eancia da Computa\u00e7\u00e3o na Universidade de Stanford e Cofundadora do AI4ALL",
                     "desc": "Fei-Fei Li \u00e9 uma das maiores refer\u00eancias no campo da vis\u00e3o computacional e IA, sendo a ex-diretora do laborat\u00f3rio de IA da Stanford. Ela \u00e9 uma defensora da IA \u00e9tica e da diversidade no campo da tecnologia.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "fei.jpg"
                 },
                 "demis": {
                     "nome_desc": "Demis Hassabis - CEO e Cofundador da DeepMind",
                     "desc": "Demis Hassabis \u00e9 o cofundador da DeepMind, a empresa respons\u00e1vel pelo desenvolvimento do AlphaGo, uma das maiores inova\u00e7\u00f5es em IA. Ele \u00e9 uma autoridade em intelig\u00eancia artificial e aprendizado profundo.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "demis.jpg"
                 }
             },
             "artigo": {
@@ -71,7 +71,7 @@
                 "metodologia": "Utilizamos uma rede neural convolucional para analisar dados de transporte, armazenagem e demanda de tr\u00eas grandes empresas do setor de log\u00edstica. O algoritmo foi treinado com um conjunto de dados de cinco anos e utilizado para prever as melhores rotas de transporte, otimizar o estoque e ajustar a demanda em tempo real.",
                 "resultados": "Os resultados mostraram uma redu\u00e7\u00e3o m\u00e9dia de 18% nos custos operacionais, al\u00e9m de uma otimiza\u00e7\u00e3o do tempo de entrega em 12%. O sistema tamb\u00e9m foi capaz de identificar gargalos nas opera\u00e7\u00f5es e sugerir ajustes autom\u00e1ticos para mitigar o impacto desses problemas.",
                 "conclusao": "As redes neurais profundas demonstraram ser uma solu\u00e7\u00e3o eficaz para melhorar processos log\u00edsticos. O pr\u00f3ximo passo seria escalar a implementa\u00e7\u00e3o dessas tecnologias para um n\u00famero maior de empresas e setores.",
-                "foto": "seila.jpg"
+                "foto": "rafael.jpg"
             }
         },
         "CyberNext": {
@@ -87,17 +87,17 @@
                 "bruce": {
                     "nome_desc": "Bruce Schneier - Especialista em Seguran\u00e7a e Criptografia, Autor e Palestrante",
                     "desc": "Bruce Schneier \u00e9 um renomado especialista em seguran\u00e7a da informa\u00e7\u00e3o e criptografia, autor de v\u00e1rios livros sobre seguran\u00e7a digital. Ele \u00e9 consultor de grandes empresas e governos sobre ciberseguran\u00e7a e privacidade.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "bruce.jpg"
                 },
                 "mikko": {
                     "nome_desc": "Mikko Hypp\u00f6nen - Chefe de Pesquisa da F-Secure, Especialista em Ciberseguran\u00e7a",
                     "desc": "Mikko Hypp\u00f6nen \u00e9 um dos maiores especialistas mundiais em malware e seguran\u00e7a cibern\u00e9tica. Ele tem d\u00e9cadas de experi\u00eancia na prote\u00e7\u00e3o de sistemas contra ataques cibern\u00e9ticos e \u00e9 um palestrante frequente em confer\u00eancias de seguran\u00e7a globais.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "mikko.jpg"
                 },
                 "theresa": {
                     "nome_desc": "Theresa Payton - Ex-CIO da Casa Branca, CEO da Fortalice Solutions",
                     "desc": "Theresa Payton foi a primeira mulher a ocupar o cargo de Chief Information Officer (CIO) da Casa Branca e \u00e9 atualmente CEO de uma empresa de consultoria em seguran\u00e7a cibern\u00e9tica. Ela \u00e9 uma figura reconhecida no combate a crimes cibern\u00e9ticos e fraude digital.",
-                    "nome_foto": "seila.jpg"
+                    "nome_foto": "theresa.jpg"
                 }
             },
             "artigo": {
@@ -108,7 +108,7 @@
                 "metodologia": "Foram implementados algoritmos p\u00f3s-qu\u00e2nticos em um ambiente simulado para testar sua efici\u00eancia e capacidade de integrar-se a sistemas de seguran\u00e7a j\u00e1 existentes. Foram avaliados aspectos como tempo de processamento, taxa de sucesso na prote\u00e7\u00e3o de dados e escalabilidade. Al\u00e9m disso, realizamos uma an\u00e1lise comparativa entre as novas t\u00e9cnicas e os m\u00e9todos tradicionais de criptografia.",
                 "resultados": "A criptografia baseada em reticulados apresentou um n\u00edvel superior de seguran\u00e7a em compara\u00e7\u00e3o com os m\u00e9todos tradicionais, com uma taxa de sucesso de 98% na prote\u00e7\u00e3o contra ataques simulados de computadores qu\u00e2nticos. No entanto, o tempo de processamento foi cerca de 20% maior do que o dos algoritmos tradicionais, exigindo melhorias para aplica\u00e7\u00f5es em larga escala.",
                 "conclusao": "A criptografia p\u00f3s-qu\u00e2ntica \u00e9 essencial para o futuro da prote\u00e7\u00e3o de dados, especialmente com o avan\u00e7o iminente da computa\u00e7\u00e3o qu\u00e2ntica. Embora as t\u00e9cnicas apresentem desafios de efici\u00eancia, sua implementa\u00e7\u00e3o gradual \u00e9 inevit\u00e1vel para garantir a seguran\u00e7a de sistemas cr\u00edticos.",
-                "foto": "seila.jpg"
+                "foto": "alan.jpg"
             }
         }
     }
