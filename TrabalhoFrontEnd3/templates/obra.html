@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Impact</title>
+
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='styles/reset.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='styles/basic.css' ) }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Art Impact</h1>
+    </header>
+
+    <div class="artist-section">
+        <h2>{{obras[id].get_nome()}}</h2>
+        <img src="{{url_for( 'static', filename=obras[id].get_img())}}">
+        <br>
+        <p><b>Descrição:</b> {{obras[id].get_desc()}}</p>
+        <p><b>Categoria:</b> {{categorias[obras[id].get_categoria()].get_nome()}}</p>
+        <p><b>Data:</b> {{obras[id].get_data()}}</p>
+        <a href="{{url_for( 'artista' , id=obras[id].get_autor() )}}"><b>Artista:</b> {{autores[obras[id].get_autor()].get_nome()}}</a>
+        {%if obras[id].get_leilao()%}
+        <p><b>Em Leilão</b></p>
+        {%endif%}
+        {%if obras[id].get_exibicao()%}
+        <p><b>Em Exibição</b></p>
+        {%endif%}
+    </div>
+
+    <div class="art-section">
+        <h2>Comentarios</h2>
+        <div>
+            {%for i in range( 0 ,obras[id].get_comentarios()|length)%}
+                <a href="{{url_for( 'comentario' , id = obras[id].get_comentarios()[i] )}}" class="obra">
+                    <div>
+                        <h3>{{comentarios[obras[id].get_comentarios()[i]].get_usuario()}}</h3>
+                        <p>{{comentarios[obras[id].get_comentarios()[i]].get_mensagem()}}</p>
+                        <p>{{comentarios[obras[id].get_comentarios()[i]].get_data()}}</p>
+                        {%if comentarios[obras[id].get_comentarios()[i]].get_lance()%}
+                        <p>{{comentarios[obras[id].get_comentarios()[i]].get_usuario()}} deu um lance de <b>${{comentarios[obras[id].get_comentarios()[i]].get_valor_lance()}}</b></p>
+                        {%endif%}
+                    </div>
+                </a>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>

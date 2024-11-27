@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Impact</title>
+
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='styles/reset.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='styles/basic.css' ) }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Art Impact</h1>
+    </header>
+
+    <div class="art-section">
+        <h2>Exibições</h2>
+        <div>
+            {%for i in range(1, exibicoes|length)%}
+                <a href="{{url_for( 'detalhes_exibicao' , id=i )}}" class="obra">
+                    <div>
+                        <h3>{{exibicoes[i].get_nome()}}</h3>
+                        <p><b>Local:</b> {{exibicoes[i].get_local()}}</p>
+                        <p><b>Data:</b> {{exibicoes[i].get_data()}}</p>
+                    </div>
+                </a>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>

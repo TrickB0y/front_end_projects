@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Impact</title>
+
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='styles/reset.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for( 'static' , filename='styles/basic.css' ) }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tauri&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Art Impact</h1>
+    </header>
+
+    <div class="art-section">
+        <a class="h2-button" href="{{url_for( 'exibicoes_home')}}">
+            <h2> Exibições </h2>
+        </a>
+    </div>
+
+    <div class="art-section">
+        <a class="h2-button" href="{{url_for( 'leiloes')}}">
+            <h2> Leilões </h2>
+        </a>
+    </div>
+
+    <div class="art-section">
+        <h2>Recentes</h2>
+        <div class="obra-box">
+            {%for i in range(1, 7)%}
+                <a href="{{url_for( 'obra' , id=i )}}" class="obra">
+                    <div>
+                        <h3>{{obras[i].get_nome()}}</h3>
+                        <img class="lil-obra" src="{{url_for('static', filename=obras[i].get_img())}}">
+                        <p><b>Categoria:</b> {{categorias[obras[i].get_categoria()].get_nome()}}</p>
+                        <p><b>Autor:</b> {{autores[obras[i].get_categoria()].get_nome()}}</p>
+                    </div>
+                </a>
+            {%endfor%}
+        </div>
+    </div>
+
+    <div class="art-section">
+        <h2>Pintura</h2>
+        <div class="obra-box">
+            {%for i in range(1, obras|length)%}
+                {%if obras[i].get_categoria() == 1%}
+                <a href="{{url_for( 'obra' , id=i )}}" class="obra">
+                    <div>
+                        <h3>{{obras[i].get_nome()}}</h3>
+                        <img class="lil-obra" src="{{url_for('static', filename=obras[i].get_img())}}">
+                        <p><b>Categoria:</b> {{categorias[obras[i].get_categoria()].get_nome()}}</p>
+                        <p><b>Autor:</b> {{autores[obras[i].get_categoria()].get_nome()}}</p>
+                    </div>
+                </a>
+                {%endif%}
+            {%endfor%}
+        </div>
+    </div>
+
+    <div class="art-section">
+        <h2>Escultura</h2>
+        <div class="obra-box">
+            {%for i in range(1, obras|length)%}
+                {%if obras[i].get_categoria() == 2%}
+                <a href="{{url_for( 'obra' , id=i )}}" class="obra">
+                    <div>
+                        <h3>{{obras[i].get_nome()}}</h3>
+                        <img class="lil-obra" src="{{url_for('static', filename=obras[i].get_img())}}">
+                        <p><b>Categoria:</b> {{categorias[obras[i].get_categoria()].get_nome()}}</p>
+                        <p><b>Autor:</b> {{autores[obras[i].get_categoria()].get_nome()}}</p>
+                    </div>
+                </a>
+                {%endif%}
+            {%endfor%}
+        </div>
+    </div>
+
+    <div class="art-section">
+        <h2>Fotografia</h2>
+        <div class="obra-box">
+            {%for i in range(1, obras|length)%}
+                {%if obras[i].get_categoria() == 3%}
+                <a href="{{url_for( 'obra' , id=i )}}" class="obra">
+                    <div>
+                        <h3>{{obras[i].get_nome()}}</h3>
+                        <img class="lil-obra" src="{{url_for('static', filename=obras[i].get_img())}}">
+                        <p><b>Categoria:</b> {{categorias[obras[i].get_categoria()].get_nome()}}</p>
+                        <p><b>Autor:</b> {{autores[obras[i].get_categoria()].get_nome()}}</p>
+                    </div>
+                </a>
+                {%endif%}
+            {%endfor%}
+        </div>
+    </div>
+
+    <div class="art-section">
+        <h2>Artistas</h2>
+        <div class="obra-box">
+            {%for i in range(1, autores|length)%}
+                <a href="{{url_for( 'artista' , id=i )}}" class="obra">
+                    <div>
+                        <h3>{{autores[i].get_nome()}}</h3>
+                        <img class="lil-obra" src="{{url_for('static', filename=autores[i].get_foto())}}">
+                        <p>{{autores[i].get_bio()}}</p>
+                    </div>
+                </a>
+            {%endfor%}
+        </div>
+    </div>
+</body>
+</html>
